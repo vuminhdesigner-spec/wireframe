@@ -6,7 +6,7 @@ Xem tại: https://vuminhdesigner-spec.github.io/wireframe/
 
 ## Nội dung
 
-Một file `index.html` duy nhất, không phụ thuộc thư viện nào. Mười khối nội dung theo
+Một file `index.html` duy nhất, không phụ thuộc thư viện nào. Mười hai khối nội dung theo
 đúng thứ tự của trang thật, mỗi khối kèm số thứ tự và nhiệm vụ ở cột trái.
 
 Hoàn toàn xám: ảnh là khung gạch chéo, đoạn văn là thanh xám, chữ thật chỉ giữ ở tiêu đề
