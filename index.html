@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wireframe — FUNDAMENTAL | Monster Lab</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#1f1f1f; --mid:#6b6b6b; --line:#c9c9c9; --fill:#e4e4e4; --fill2:#efefef;
+    --bg:#f6f6f6; --accent:#8a8a8a;
+    --f:"Inter","Helvetica Neue",Arial,sans-serif;
+  }
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* thanh tiêu đề tài liệu */
+  .doc{background:#fff;border-bottom:2px solid var(--ink);padding:18px 0;position:sticky;top:0;z-index:20}
+  .doc .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .doc b{font-size:15px;letter-spacing:-.01em}
+  .doc span{font-size:12px;color:var(--mid);letter-spacing:.06em;text-transform:uppercase}
+
+  /* khối section */
+  .sec{border-top:1px dashed var(--line);padding:40px 0}
+  .sec:first-of-type{border-top:0}
+  .sec > .wrap{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start}
+  .num{font-size:13px;font-weight:700;color:var(--mid);letter-spacing:.1em;padding-top:6px}
+  .num i{display:block;font-style:normal;font-weight:400;font-size:11px;line-height:1.45;margin-top:6px;color:#9a9a9a}
+
+  /* nguyên thể wireframe */
+  .box{border:1px solid var(--line);background:#fff;border-radius:4px;padding:22px}
+  .ph{background:var(--fill);border:1px dashed var(--line);border-radius:3px;
+      display:flex;align-items:center;justify-content:center;color:var(--mid);
+      font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:8px}
+  .ph--img::after{content:"";position:absolute;inset:0;
+      background:linear-gradient(to top right,transparent 49.4%,var(--line) 49.6%,var(--line) 50.4%,transparent 50.6%),
+                 linear-gradient(to top left, transparent 49.4%,var(--line) 49.6%,var(--line) 50.4%,transparent 50.6%)}
+  .ph--img{position:relative}
+  .lines{display:grid;gap:8px}
+  .ln{height:10px;background:var(--fill);border-radius:2px}
+  .ln.s{width:62%} .ln.m{width:84%} .ln.xs{width:40%}
+  .h{font-weight:700;letter-spacing:-.01em;margin:0 0 10px}
+  .h1{font-size:38px;line-height:1.05} .h2{font-size:24px} .h3{font-size:16px}
+  .kick{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);margin:0 0 10px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 22px;
+       border:1.5px solid var(--ink);border-radius:3px;font-size:13px;font-weight:600}
+  .btn--o{border-style:dashed;color:var(--mid);border-color:var(--line)}
+  .row{display:flex;gap:12px;flex-wrap:wrap}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .g6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+  .note{font-size:12px;color:var(--mid);margin-top:10px}
+  .scrollrow{display:flex;gap:16px;overflow-x:auto;padding-bottom:10px}
+  .scrollrow > *{flex:0 0 190px}
+  @media (max-width:900px){
+    .sec > .wrap{grid-template-columns:1fr;gap:14px}
+    .num{padding-top:0}
+    .g4,.g3,.g6{grid-template-columns:1fr 1fr}
+    .g2{grid-template-columns:1fr}
+    .h1{font-size:30px}
+  }
+</style>
+</head>
+<body>
+
+<div class="doc"><div class="wrap">
+  <b>Wireframe — Khoá FUNDAMENTAL</b>
+  <span>Monster Lab · bố cục &amp; thứ tự nội dung · không màu, không ảnh</span>
+</div></div>
+
+<!-- 01 HERO -->
+<section class="sec"><div class="wrap">
+  <div class="num">01<i>Hero<br>Chứng minh trình độ trong 5 giây</i></div>
+  <div>
+    <div class="box" style="display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:center;min-height:340px">
+      <div>
+        <p class="kick">Tên khoá học</p>
+        <h1 class="h h1">FUNDAMENTAL</h1>
+        <div class="lines" style="margin:14px 0 20px;max-width:420px"><div class="ln m"></div><div class="ln s"></div></div>
+        <div class="row"><span class="btn">Đăng ký ngay</span><span class="btn btn--o">Chat Zalo</span></div>
+      </div>
+      <div class="ph ph--img" style="height:250px">Tác phẩm học viên</div>
+    </div>
+    <p class="note">Mở bằng tác phẩm, không mở bằng khẩu hiệu. Hai nút đặt cạnh nhau.</p>
+  </div>
+</div></section>
+
+<!-- 02 TỔNG QUAN -->
+<section class="sec"><div class="wrap">
+  <div class="num">02<i>Dải tổng quan<br>Đọc hết trong 10 giây</i></div>
+  <div>
+    <div class="g6">
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">12</div><div class="note">tháng</div></div>
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">10</div><div class="note">module</div></div>
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">205</div><div class="note">buổi</div></div>
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">Mới</div><div class="note">đối tượng</div></div>
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">Offline</div><div class="note">hình thức</div></div>
+      <div class="box" style="padding:16px"><div class="ln xs" style="margin-bottom:8px"></div><div class="h h3">15.10</div><div class="note">khai giảng</div></div>
+    </div>
+    <p class="note">Khối dành cho phụ huynh. Sáu thông số, không cần đọc chữ dài.</p>
+  </div>
+</div></section>
+
+<!-- 03 BẮT ĐẦU TỪ 0 -->
+<section class="sec"><div class="wrap">
+  <div class="num">03<i>Bắt đầu từ con số 0<br>Gỡ nỗi sợ chưa đủ giỏi</i></div>
+  <div>
+    <div class="box" style="display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:center">
+      <div class="ph ph--img" style="height:200px">Minh hoạ</div>
+      <div>
+        <h2 class="h h2">Bạn có thể bắt đầu từ con số 0</h2>
+        <div class="lines"><div class="ln"></div><div class="ln m"></div><div class="ln s"></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 04 PHÙ HỢP VỚI AI -->
+<section class="sec"><div class="wrap">
+  <div class="num">04<i>Phù hợp với ai<br>Để người đọc nhận ra mình</i></div>
+  <div>
+    <p class="kick">Đối tượng</p>
+    <h2 class="h h2">Chương trình này phù hợp với ai?</h2>
+    <div class="g4" style="margin-top:16px">
+      <div class="box"><div class="ph ph--img" style="height:110px;margin-bottom:12px">Ảnh</div><div class="note">Nhóm #1</div><div class="lines" style="margin-top:8px"><div class="ln"></div><div class="ln m"></div></div></div>
+      <div class="box"><div class="ph ph--img" style="height:110px;margin-bottom:12px">Ảnh</div><div class="note">Nhóm #2</div><div class="lines" style="margin-top:8px"><div class="ln"></div><div class="ln m"></div></div></div>
+      <div class="box"><div class="ph ph--img" style="height:110px;margin-bottom:12px">Ảnh</div><div class="note">Nhóm #3</div><div class="lines" style="margin-top:8px"><div class="ln"></div><div class="ln m"></div></div></div>
+      <div class="box"><div class="ph ph--img" style="height:110px;margin-bottom:12px">Ảnh</div><div class="note">Nhóm #4</div><div class="lines" style="margin-top:8px"><div class="ln"></div><div class="ln m"></div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 05 VÌ SAO -->
+<section class="sec"><div class="wrap">
+  <div class="num">05<i>Vì sao cần nền tảng<br>Giải thích vì sao 12 tháng</i></div>
+  <div>
+    <p class="kick">Lý do</p>
+    <h2 class="h h2">Vì sao cần học nền tảng?</h2>
+    <div class="g4" style="margin-top:16px">
+      <div class="box"><div class="ph" style="height:90px;margin-bottom:12px">Minh hoạ</div><div class="h h3">Quan sát</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+      <div class="box"><div class="ph" style="height:90px;margin-bottom:12px">Minh hoạ</div><div class="h h3">Cấu trúc</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+      <div class="box"><div class="ph" style="height:90px;margin-bottom:12px">Minh hoạ</div><div class="h h3">Biểu đạt</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+      <div class="box"><div class="ph" style="height:90px;margin-bottom:12px">Minh hoạ</div><div class="h h3">Linh hoạt</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 06 PHƯƠNG PHÁP -->
+<section class="sec"><div class="wrap">
+  <div class="num">06<i>Phương pháp đào tạo<br>Điểm khác với nơi khác</i></div>
+  <div>
+    <div class="box" style="display:grid;grid-template-columns:1fr 320px;gap:28px">
+      <div>
+        <p class="kick">Phương pháp đào tạo</p>
+        <h2 class="h h2">Thiết kế cho tương lai</h2>
+        <div class="g2" style="margin-top:16px">
+          <div><div class="h h3">Kiến thức nền tảng</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+          <div><div class="h h3">Tư duy thiết kế</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+          <div><div class="h h3">AI đúng thời điểm</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+          <div><div class="h h3">Pipeline làm chuẩn</div><div class="lines"><div class="ln"></div><div class="ln s"></div></div></div>
+        </div>
+        <div class="row" style="margin-top:20px"><span class="btn">Đăng ký đánh giá đầu vào</span></div>
+      </div>
+      <div class="ph ph--img" style="height:100%;min-height:220px">Minh hoạ</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 07 LỘ TRÌNH -->
+<section class="sec"><div class="wrap">
+  <div class="num">07<i>Lộ trình 12 tháng<br>10 module + 2 buổi review</i></div>
+  <div>
+    <p class="kick">Chương trình học</p>
+    <h2 class="h h2">Lộ trình Fundamental 12 tháng</h2>
+    <div class="scrollrow" style="margin-top:16px">
+      <div class="box" style="padding:14px"><div class="ph ph--img" style="height:120px;margin-bottom:10px">Tác phẩm 01</div><div class="h h3">Module 01</div><div class="note">Fundamental Drawing 1</div></div>
+      <div class="box" style="padding:14px"><div class="ph ph--img" style="height:120px;margin-bottom:10px">Tác phẩm 02</div><div class="h h3">Module 02</div><div class="note">Still Life</div></div>
+      <div class="box" style="padding:14px"><div class="ph ph--img" style="height:120px;margin-bottom:10px">Tác phẩm 03</div><div class="h h3">Module 03</div><div class="note">Color Theory</div></div>
+      <div class="box" style="padding:14px"><div class="ph ph--img" style="height:120px;margin-bottom:10px">Tác phẩm 04</div><div class="h h3">Module 04</div><div class="note">Digital Skill Set 01</div></div>
+      <div class="box" style="padding:14px"><div class="ph ph--img" style="height:120px;margin-bottom:10px">Tác phẩm 05</div><div class="h h3">Mục 05</div><div class="note">…tới mục 12</div></div>
+    </div>
+    <p class="note">Mười hai thẻ: 10 module chuyên môn và 2 buổi Portfolio Review. Mỗi thẻ kèm một tác phẩm thật.</p>
+  </div>
+</div></section>
+
+<!-- 08 KẾT QUẢ -->
+<section class="sec"><div class="wrap">
+  <div class="num">08<i>Sau 12 tháng đạt được gì<br>Nối việc học với đi làm</i></div>
+  <div>
+    <p class="kick">Kết quả</p>
+    <h2 class="h h2">Sau 12 tháng bạn đạt được gì?</h2>
+    <div class="g3" style="margin-top:16px">
+      <div class="box"><div class="h h3">A. Kiến thức</div><div class="lines"><div class="ln"></div><div class="ln m"></div><div class="ln"></div><div class="ln s"></div></div></div>
+      <div class="box"><div class="h h3">B. Kỹ năng</div><div class="lines"><div class="ln"></div><div class="ln m"></div><div class="ln"></div><div class="ln s"></div></div></div>
+      <div class="box"><div class="h h3">C. Năng lực nghề nghiệp</div><div class="lines"><div class="ln"></div><div class="ln m"></div><div class="ln"></div><div class="ln s"></div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 09 FAQ -->
+<section class="sec"><div class="wrap">
+  <div class="num">09<i>FAQ<br>Dọn băn khoăn cuối cùng</i></div>
+  <div>
+    <p class="kick">Câu hỏi thường gặp</p>
+    <h2 class="h h2">Hỏi trước khi đăng ký</h2>
+    <div style="margin-top:16px;display:grid;gap:10px">
+      <div class="box" style="padding:16px 18px"><div class="h h3" style="margin:0">Tôi chưa từng học vẽ, có theo được không?</div><div class="lines" style="margin-top:12px"><div class="ln"></div><div class="ln m"></div></div></div>
+      <div class="box" style="padding:16px 18px;display:flex;justify-content:space-between;align-items:center"><div class="h h3" style="margin:0">Tôi không có năng khiếu thì sao?</div><span class="note">+</span></div>
+      <div class="box" style="padding:16px 18px;display:flex;justify-content:space-between;align-items:center"><div class="h h3" style="margin:0">Sau khoá học tôi có thể đi làm ngay không?</div><span class="note">+</span></div>
+      <div class="box" style="padding:16px 18px;display:flex;justify-content:space-between;align-items:center"><div class="h h3" style="margin:0">Chương trình có dạy AI không?</div><span class="note">+</span></div>
+    </div>
+    <p class="note">Câu đầu mở sẵn. Trả lời thẳng câu khó: học phí, cam kết, người chưa biết vẽ.</p>
+  </div>
+</div></section>
+
+<!-- 10 ĐĂNG KÝ -->
+<section class="sec"><div class="wrap">
+  <div class="num">10<i>Đăng ký<br>Thu lead</i></div>
+  <div>
+    <div class="box" style="display:grid;grid-template-columns:1fr 360px;gap:28px">
+      <div>
+        <p class="kick">Đăng ký</p>
+        <h2 class="h h2">Đăng ký đánh giá đầu vào</h2>
+        <div class="lines" style="margin-top:14px"><div class="ln"></div><div class="ln m"></div><div class="ln s"></div></div>
+        <div class="row" style="margin-top:18px"><span class="btn btn--o">Hoặc chat Zalo</span></div>
+      </div>
+      <div class="box" style="background:var(--fill2)">
+        <div class="note" style="margin:0 0 12px">Form nhúng — Elementor</div>
+        <div style="display:grid;gap:10px">
+          <div class="ph" style="height:40px">Họ và tên</div>
+          <div class="ph" style="height:40px">Số điện thoại</div>
+          <div class="ph" style="height:40px">Trình độ hiện tại</div>
+          <div class="btn" style="width:100%">Gửi đăng ký</div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Form ngắn ba trường, đặt cạnh nút Zalo. Chỉ tải khi cuộn gần tới.</p>
+  </div>
+</div></section>
+
+<footer style="border-top:2px solid var(--ink);margin-top:20px;padding:26px 0 50px">
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <span class="note">Wireframe — bố cục và thứ tự nội dung. Màu, hình ảnh và chuyển động nằm ở phiên bản V1.</span>
+    <span class="note">Monster Lab · FUNDAMENTAL</span>
+  </div>
+</footer>
+
+</body>
+</html>
